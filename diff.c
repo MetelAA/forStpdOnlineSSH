@@ -1,5 +1,5 @@
 #include "diff.h"
-#include "stdio.h"
+//#include "stdio.h"
 
 int diffN(int a[], int n){
     int max = maxN(a, n);

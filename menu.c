@@ -12,34 +12,33 @@ int main(){
     
     int n = 0;
     int a[100];
-    int sOut = scanf("%d", &a[n]);
-    while(sOut != 0 && n < 100){
-        n++;
+    int sOut;
+    do{
         sOut = scanf("%d", &a[n]);
-    }
-
+        n++;
+    }while(sOut != 0 && n < 100);
+    n--;
     if(n == 100){
-        printf("Данные некорректны"); //так и не понял, гарантируется ли это условиями задачи
+        printf("Данные некорректны\n"); //так и не понял, гарантируется ли это условиями задачи
     }
-
     menu(a, n, t);
 }
 
 void menu(int a[], int n, int t){
     switch (t) {
         case 0:
-            printf("%d", maxN(a, n));
+            printf("%d\n", maxN(a, n));
             break;
         case 1:
-            printf("%d", minN(a, n));
+            printf("%d\n", minN(a, n));
             break;
         case 2:
-            printf("%d", diffN(a, n));
+            printf("%d\n", diffN(a, n));
             break;
         case 3:
-            printf("%d", sum(a, n));
+            printf("%d\n", sum(a, n));
             break;
         default:
-            printf("Данные некорректны");
+            printf("Данные некорректны\n");
     }
 }
