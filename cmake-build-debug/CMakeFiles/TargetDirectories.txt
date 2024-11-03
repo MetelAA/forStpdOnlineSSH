@@ -1,3 +1,0 @@
-D:/ClionProj/fixLB2/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ClionProj/fixLB2/cmake-build-debug/CMakeFiles/fixLB2.dir
-D:/ClionProj/fixLB2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
